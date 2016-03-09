@@ -10,11 +10,11 @@
           </div>
   </div>
 
-<script src="./dropzone/dropzone.js"></script>
-<link rel="stylesheet" href="./dropzone/dropzone.css">
+<link rel="stylesheet" type="text/css" href="./dropzone/dropzone.css" />
+<script type="text/javascript" src="./dropzone/dropzone.js"></script>
 
 <!-- Change /upload-target to your upload address -->
-<form id="formDropzoneID" action="accueil_adultes.php?page=upload-target" class="dropzone">
+<form id="myDropzone" method='post' class="dropzone" action="upload-target.php" enctype='multipart/form-data'>
     
     <!-- If the dropzone is not supported-->
     <div class="fallback">
@@ -22,4 +22,5 @@
     </div>
     
 </form>
-<input type="submit" value="Envoyer" form="formDropzoneID"/>
+
+<input type="submit" id="add" value="Envoyer"/>

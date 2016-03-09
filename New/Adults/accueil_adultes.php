@@ -131,7 +131,7 @@ $session = session_start();
                             <li class="dropdown">
                                 <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                                     <span class="profile-ava">
-                                        <img alt="" height="20%" width="20%" src="user.png">
+                                        <img alt="" height="15%" width="15%" src="user.png">
                                     </span>
                                     <span class="username"><b><?php echo $_SESSION['firstname']." ".$_SESSION['lastname'];    ?></b></span>
                                     <b class="caret"></b>
