@@ -118,7 +118,7 @@
       withCredentials: false,
       parallelUploads: 10,
       uploadMultiple: false,
-      maxFilesize: 256, //in MiB
+      maxFilesize: 256, //in MiB. Warning : Change manually the variables post_max_size=0 and upload_max_filesize=0 in php.ini
       paramName: "file_to_upload",
       createImageThumbnails: true,
       maxThumbnailFilesize: 10,
@@ -835,7 +835,7 @@
       selectedSize = 0;
       selectedUnit = "b";
       if (size > 0) {
-        units = ['TB', 'GB', 'MB', 'KB', 'b'];
+        units = ['To', 'Go', 'Mo', 'Ko', 'o'];
         for (i = _i = 0, _len = units.length; _i < _len; i = ++_i) {
           unit = units[i];
           cutoff = Math.pow(this.options.filesizeBase, 4 - i) / 10;
