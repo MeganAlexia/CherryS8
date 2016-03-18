@@ -22,12 +22,12 @@ $session = session_start();
         </script>
         <script src="../posabsolute-jQuery-Validation-Engine-499f567/js/jquery.validationEngine.js" type="text/javascript" charset="utf-8">
         </script>
-        <script>
+        <!--<script>
             jQuery(document).ready(function () {
                 // binds form submission and fields to the validation engine
                 jQuery("#formID").validationEngine();
             });
-        </script>
+        </script>-->
 
 
         <!-- Bootstrap CSS -->    
@@ -92,6 +92,71 @@ $session = session_start();
             });
 
         </script>
+        
+        <!--CSS drag and drop-->
+        <style>
+
+            #drop-zone {
+                /*Sort of important*/
+                width: 100%;
+                /*Sort of important*/
+                height: 200px;
+                position:absolute;
+                left:0%;
+                top:0px;
+                margin-left:0;
+                border: 2px dashed rgba(0,0,0,.3);
+                border-radius: 20px;
+                font-family: Arial;
+                text-align: center;
+                position: relative;
+                line-height: 180px;
+                font-size: 20px;
+                color: rgba(0,0,0,.3);
+            }
+
+            #drop-zone input {
+                /*Important*/
+                position: absolute;
+                /*Important*/
+                cursor: pointer;
+                left: 0px;
+                top: 0px;
+                /*Important This is only comment out for demonstration purpeses.
+                opacity:0; */
+            }
+
+            /*Important*/
+            #drop-zone.mouse-over {
+                border: 2px dashed rgba(0,0,0,.5);
+                color: rgba(0,0,0,.5);
+            }
+
+
+            /*If you dont want the button*/
+            #clickHere {
+                position: absolute;
+                cursor: pointer;
+                left: 50%;
+                top: 50%;
+                margin-left: -50px;
+                margin-top: 20px;
+                line-height: 26px;
+                color: white;
+                font-size: 12px;
+                width: 100px;
+                height: 26px;
+                border-radius: 4px;
+                background-color: #3b85c3;
+
+            }
+
+            #clickHere:hover {
+                background-color: #4499DD;
+
+            }
+
+        </style>
     </head>
 
     <body>
@@ -145,7 +210,7 @@ $session = session_start();
                                         <a href="#"><i class="icon_mail_alt"></i> Mes messages </a>
                                     </li>
                                     <li>
-                                        <a href="accueil_adultes.php?page=gestion_fichiers"><i class="icon_chat_alt"></i> Mes fichiers </a>
+                                        <a href="accueil_adultes.php?page=file-manage"><i class="icon_chat_alt"></i> Mes fichiers </a>
                                     </li>
                                     <li>
                                         <a href="accueil_adultes.php?page=../handlers/logoutHandler"><i class="icon_key_alt"></i> Déconnexion </a>
